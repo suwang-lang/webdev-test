@@ -11,9 +11,10 @@ h1 {
 }
 
 h2 {
-	font-size: 5vw;
-	font-size: 4vh;
+	font-size: 4vw;
+	font-size: 3vh;
 	text-align: center;
+	text-overflow: ellipsis;
 }
 
 div {
