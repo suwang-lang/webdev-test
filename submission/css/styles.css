@@ -17,10 +17,6 @@ h2 {
 	text-overflow: ellipsis;
 }
 
-div {
-	overflow: scroll;
-}
-
 /*Coloring params*/
 
 .bg_gray {
@@ -47,6 +43,7 @@ div {
 #container {
 	position: relative;
 	margin: 0.8%;
+	overflow: scroll;
 }
 
 #container > h2 {
@@ -60,9 +57,9 @@ div {
 	border-bottom: 2px solid black;
 }
 
-#container > p {
+#container > div {
 	position: absolute;
-	top: 20%;
+	top: 25%;
 	left: 2%;
 	clear: both;
 	font-size: 2vw;
