@@ -7,14 +7,12 @@
 h1 {
 	text-align: center;
 	height: 10vh;
-	font-size: 6vw;
+	font-size: 6vim;
 }
 
 h2 {
-	font-size: 4vw;
-	font-size: 3vh;
+	font-size: 3vmin;
 	text-align: center;
-	text-overflow: ellipsis;
 }
 
 /*Coloring params*/
@@ -43,7 +41,8 @@ h2 {
 #container {
 	position: relative;
 	margin: 0.8%;
-	overflow: scroll;
+	overflow: auto;
+	display: inline-block;
 }
 
 #container > h2 {
@@ -62,8 +61,7 @@ h2 {
 	top: 25%;
 	left: 2%;
 	clear: both;
-	font-size: 2vw;
-	font-size: 2vh;
+	font-size: 2vmin;
 }
 
 /*Responsive params*/
@@ -73,6 +71,10 @@ h2 {
   height: 80vh;
   margin-left: 2%;
   margin-bottom: 2%;
+}
+
+.scrollable {
+	overflow: auto;
 }
 
 /********** Desktop **********/
