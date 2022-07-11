@@ -42,7 +42,6 @@ h2 {
 	position: relative;
 	margin: 0.8%;
 	overflow: auto;
-	display: inline-block;
 }
 
 #container > h2 {
@@ -61,7 +60,11 @@ h2 {
 	top: 25%;
 	left: 2%;
 	clear: both;
-	font-size: 2vmin;
+	/*font-size: 2vmin;*/
+}
+
+#text-fit-div {
+	font-size: fit-precise;
 }
 
 /*Responsive params*/
@@ -71,10 +74,7 @@ h2 {
   height: 80vh;
   margin-left: 2%;
   margin-bottom: 2%;
-}
-
-.scrollable {
-	overflow: auto;
+  display: inline-block;
 }
 
 /********** Desktop **********/
