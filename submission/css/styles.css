@@ -11,7 +11,6 @@ h1 {
 }
 
 h2 {
-	font-size: 3vmin;
 	text-align: center;
 }
 
@@ -53,6 +52,7 @@ h2 {
 	margin: 0px;
 	border-left: 2px solid black;
 	border-bottom: 2px solid black;
+	font-size: 4vmin;
 }
 
 #container > div {
@@ -60,7 +60,7 @@ h2 {
 	top: 25%;
 	left: 2%;
 	clear: both;
-	/*font-size: 2vmin;*/
+	font-size: 6vim;
 }
 
 #text-fit-div {
@@ -74,7 +74,7 @@ h2 {
   height: 80vh;
   margin-left: 2%;
   margin-bottom: 2%;
-  display: inline-block;
+
 }
 
 /********** Desktop **********/
