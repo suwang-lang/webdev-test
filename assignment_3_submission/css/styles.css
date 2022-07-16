@@ -12,7 +12,7 @@
 #header-brand {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 10vim;
-	color: var(--custom-light);
+	color: #fefae0;
 	text-transform: capitalize;
 	text-shadow: 3px 3px 3px #222;
 	margin-top: 1.0;
@@ -27,7 +27,7 @@
 /* BEGIN OVERALL */
 
 body {
-	background: var(--custom-dark-green)
+	background: #264653;
 }
 
 #header-nav {
@@ -43,7 +43,7 @@ body {
 /* BEGIN HEADER */
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid var(--custom-dark-green);
+  border: 1px solid #264653;
 }
 .navbar-header button.navbar-toggle {
   clear: both;
@@ -65,18 +65,18 @@ body {
 	height: fit-content; /* dropdown bars fit perfectly with navlist */
 }
 #nav-list span {
-	color: var(--custom-dark-green);
+	color: #264653;
 	text-align: center;
 	font-size: 1.5em;
 	font-weight: bold;
-	border-bottom: 1px solid var(--custom-dark-green);
+	border-bottom: 1px solid #264653;
 }
 #nav-list span:hover {
 	background: var(--custom-yellow);
-	color: var(--custom-light);
+	color: #fefae0;
 }
 #nav-list li:nth-child(1) > span{
-	border-top: 1px solid var(--custom-dark-green);
+	border-top: 1px solid #264653;
 }
 
 /* END HEADER */
@@ -92,7 +92,7 @@ body {
 	font-family: cursive;
 	font-size: 40px;
 	text-align: center;
-	color: var(--custom-light);
+	color: #fefae0;
 	text-shadow: 3px 3px 3px #222;
 	margin-bottom: 30px;
 }
@@ -103,7 +103,7 @@ body {
 #menu-tiles div {
 	height: 800px;
 	margin: 0;
-	border: 10px solid var(--custom-dark-green);
+	border: 10px solid #264653;
 	overflow: scroll;
 }
 #menu-tiles h2 {
@@ -135,7 +135,7 @@ body {
 	color: #ee9b00;
 }
 #beef-tile > p {
-	color: var(--custom-light);
+	color: #fefae0;
 }
 
 #sushi-tile {
@@ -145,7 +145,7 @@ body {
 	color: black;
 }
 #sushi-tile > p {
-	color: var(--custom-dark-green);
+	color: #264653;
 }
 
 
