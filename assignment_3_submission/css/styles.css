@@ -1,13 +1,13 @@
 /* BEGIN COLOR & FONT */
 
-:root {
+/*:root {
 	--custom-dark-green: #264653;
 	--custom-light-green: #2a9d8f;
 	--custom-yellow: #e9c46a;
 	--custom-orange: #f4a261;
 	--custom-red: #e76f51;
 	--custom-light: #fefae0;
-}
+}*/
 
 #header-brand {
 	font-family: 'Josefin Sans', sans-serif;
@@ -31,7 +31,6 @@ body {
 }
 
 #header-nav {
-	/*background-color: var(--custom-yellow);*/
 	background-color: #48cae4;
 	border-radius: 0;
 	border: 0;
@@ -72,7 +71,7 @@ body {
 	border-bottom: 1px solid #264653;
 }
 #nav-list span:hover {
-	background: var(--custom-yellow);
+	background: #e9c46a;
 	color: #fefae0;
 }
 #nav-list li:nth-child(1) > span{
@@ -98,7 +97,7 @@ body {
 }
 
 #menu-tiles {
-	background: var(--custom-yellow);
+	background: #e9c46a;
 }
 #menu-tiles div {
 	height: 800px;
