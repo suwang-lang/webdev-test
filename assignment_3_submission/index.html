@@ -5,43 +5,92 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 
+	<!-- Style imports -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<!-- Font imports -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
-	<br><br>
-	<h1>Our Menu</h1>
+<header>
+	<nav id="header-nav" class="navbar navbar-default">
+		<div class="container">
 
-	<div class="row">
+			<!-- Navbar header -->
+			<div class="navbar-header header-font">
+				<!-- Logo -->
+				<div class="navbar-brand">
+					<h1 id="header-brand">Food, LLC</h1>
+				</div>
 
-		<div id="container" class="col-lg-30 col-md-50 col-sm-100 bg_gray">
-			<h2 class="bg_pink">Chicken</h2>
-			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. </div>
+				<!-- Collapsable dropdown -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span> <!-- screen-reader-only -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+			</div> <!-- End navbar-header -->
+
+			<!-- Dropdown button configs -->
+			<!-- NB: only enabled with JS imports. -->
+			<div id="collapsable-nav" class="collapse navbar-collapse">
+				<ul id="nav-list" class="nav navbar-nav navbar-right">
+					<li><span class="visible-xs">Chicken</span></li>
+					<li><span class="visible-xs">Beef</span></li>
+					<li><span class="visible-xs">Sushi</span></li>
+				</ul>
+			</div>
+
+		</div> <!-- End nav container -->
+	</nav> <!-- End nav --> 
+</header> <!-- End header -->
+
+<div id="menu" class="container">
+	<h1 id="menu-title">Our Menu</h1>
+	<div id="menu-tiles" class="row">
+		<div id="chicken-tile" class="col-lg-4 col-md-6 col-sm-12">
+			<h2>Chicken</h2>
+			<p class="menu-para">
+				Immanuel Kant (1724–1804) is the central figure in modern philosophy. He synthesized early modern rationalism and empiricism, set the terms for much of nineteenth and twentieth century philosophy, and continues to exercise a significant influence today in metaphysics, epistemology, ethics, political philosophy, aesthetics, and other fields. The fundamental idea of Kant’s “critical philosophy” – especially in his three Critiques: the Critique of Pure Reason (1781, 1787), the Critique of Practical Reason (1788), and the Critique of the Power of Judgment (1790) – is human autonomy. He argues that the human understanding is the source of the general laws of nature that structure all our experience; and that human reason gives itself the moral law, which is our basis for belief in God, freedom, and immortality. Therefore, scientific knowledge, morality, and religious belief are mutually consistent and secure because they all rest on the same foundation of human autonomy, which is also the final end of nature according to the teleological worldview of reflecting judgment that Kant introduces to unify the theoretical and practical parts of his philosophical system.
+			</p>
 		</div>
-	
-		<div id="container" class="col-lg-30 col-md-50 col-sm-100 bg_gray">
-			<h2 class="bg_red">Beef</h2>
-			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. </div>
+		<div id="beef-tile" class="col-lg-4 col-md-6 col-sm-12">
+			<h2>Beef</h2>
+			<p class="menu-para">
+				Immanuel Kant (1724–1804) is the central figure in modern philosophy. He synthesized early modern rationalism and empiricism, set the terms for much of nineteenth and twentieth century philosophy, and continues to exercise a significant influence today in metaphysics, epistemology, ethics, political philosophy, aesthetics, and other fields. The fundamental idea of Kant’s “critical philosophy” – especially in his three Critiques: the Critique of Pure Reason (1781, 1787), the Critique of Practical Reason (1788), and the Critique of the Power of Judgment (1790) – is human autonomy. He argues that the human understanding is the source of the general laws of nature that structure all our experience; and that human reason gives itself the moral law, which is our basis for belief in God, freedom, and immortality. Therefore, scientific knowledge, morality, and religious belief are mutually consistent and secure because they all rest on the same foundation of human autonomy, which is also the final end of nature according to the teleological worldview of reflecting judgment that Kant introduces to unify the theoretical and practical parts of his philosophical system.
+
+			</p>
 		</div>
-
-		<div id="container" class="col-lg-30 col-md-100 col-sm-100 bg_gray">
-			<h2 class="bg_yellow">Sushi</h2>
-			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.</div>
+		<div id="sushi-tile" class="col-lg-4 col-md-12 col-sm-12">
+			<h2>Sushi</h2>
+			<p class="menu-para">
+				Immanuel Kant (1724–1804) is the central figure in modern philosophy. He synthesized early modern rationalism and empiricism, set the terms for much of nineteenth and twentieth century philosophy, and continues to exercise a significant influence today in metaphysics, epistemology, ethics, political philosophy, aesthetics, and other fields. The fundamental idea of Kant’s “critical philosophy” – especially in his three Critiques: the Critique of Pure Reason (1781, 1787), the Critique of Practical Reason (1788), and the Critique of the Power of Judgment (1790) – is human autonomy. He argues that the human understanding is the source of the general laws of nature that structure all our experience; and that human reason gives itself the moral law, which is our basis for belief in God, freedom, and immortality. Therefore, scientific knowledge, morality, and religious belief are mutually consistent and secure because they all rest on the same foundation of human autonomy, which is also the final end of nature according to the teleological worldview of reflecting judgment that Kant introduces to unify the theoretical and practical parts of his philosophical system.
+				Immanuel Kant was born April 22, 1724 in Königsberg, near the southeastern shore of the Baltic Sea. Today Königsberg has been renamed Kaliningrad and is part of Russia. But during Kant’s lifetime Königsberg was the capital of East Prussia, and its dominant language was German. Though geographically remote from the rest of Prussia and other German cities, Königsberg was then a major commercial center, an important military port, and a relatively cosmopolitan university town.[1]
+				Kant was born into an artisan family of modest means. His father was a master harness maker, and his mother was the daughter of a harness maker, though she was better educated than most women of her social class. Kant’s family was never destitute, but his father’s trade was in decline during Kant’s youth and his parents at times had to rely on extended family for financial support.
+			</p>
 		</div>
+	</div> <!-- End menu-tiles -->
+</div> <!-- End menu -->
 
-	</div>
 
-
+<!-- jQuery (Bootstrap JS plugins depend on it) -->
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
+
+
+<!-- 
+* 1 page;
+* md sm xs for desktop/tablet/phone;
+* 
+
+-->
