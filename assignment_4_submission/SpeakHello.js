@@ -31,6 +31,9 @@
   helloSpeaker.speak = function (name) {
     console.log(helloSpeaker.speakWord + " " + name);
   }
+  helloSpeaker.speakAndReturn = function (name) {
+    return helloSpeaker.speakWord + " " + name;
+  }
   window.helloSpeaker = helloSpeaker;
 
 })(window);

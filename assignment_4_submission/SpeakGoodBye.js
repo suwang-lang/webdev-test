@@ -32,6 +32,9 @@
   byeSpeaker.speak = function (name) {
     console.log(byeSpeaker.speakWord + " " + name);
   }
+  byeSpeaker.speakAndReturn = function (name) {
+    return byeSpeaker.speakWord + " " + name;
+  }
   window.byeSpeaker = byeSpeaker;
 
 })(window);

@@ -9,23 +9,60 @@
   <script src="SpeakHello.js"></script>
   <script src="SpeakGoodBye.js"></script>
   <script src="script.js"></script>
+
+
+  <!-- Console solution to Assignment 4. -->
+  <script type="text/javascript">
+
+    var printNames = function () {
+      // Prints out greeting + name per requirements for Assignment 4.
+      for (var idx in nameCaller.names) {
+        var name = nameCaller.names[idx];
+        var firstLetter = name.charAt(0);
+        if ((firstLetter == "J") || (firstLetter == "j")) {
+          helloSpeaker.speak(name);
+        } else {
+          byeSpeaker.speak(name);
+        }
+      }
+    }
+
+    printNames();
+
+  </script>
+
+  <!-- HTML buttoned solution to Assignment 4. -->
+
+  <script type="text/javascript">
+    
+    var printNamesInPage = function () {
+      var a = window.open('', '', 'height=500, width=500');
+      a.document.write("<br>");
+      for (var idx in nameCaller.names) {
+        var name = nameCaller.names[idx];
+        var firstLetter = name.charAt(0);
+        if ((firstLetter == "J") || (firstLetter == "j")) {
+          message = helloSpeaker.speakAndReturn(name);
+        } else {
+          message = byeSpeaker.speakAndReturn(name);
+        }
+        a.document.write(message);
+        a.document.write("<br>");
+      }
+      a.document.close();
+    }
+
+
+  </script>
+
+
 </head>
 <body>
   <h1>Module 4 Solution Starter</h1>
 
-  <script type="text/javascript">
 
-    for (var idx in nameCaller.names) {
-      var name = nameCaller.names[idx];
-      var firstLetter = name.charAt(0);
-      if ((firstLetter == "J") || (firstLetter == "j")) {
-        helloSpeaker.speak(name);
-      } else {
-        byeSpeaker.speak(name);
-      }
-    }
+  <input type="button" value="click to get greetings!" onclick="printNamesInPage()">
 
-  </script>
 
 </body>
 </html>
