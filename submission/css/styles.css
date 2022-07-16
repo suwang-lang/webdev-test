@@ -50,6 +50,7 @@ h2 {
 	top: 0px;
 	right: 0px;
 	margin: 0px;
+	padding: 1px;
 	border-left: 2px solid black;
 	border-bottom: 2px solid black;
 	font-size: 20px;
@@ -60,6 +61,7 @@ h2 {
 	top: 22%;
 	left: 2%;
 	clear: both;
+	padding: 1px;
 /*	font-size: 6vim;
 	display: inline-block;*/
 }
