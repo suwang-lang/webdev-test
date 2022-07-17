@@ -20,9 +20,9 @@
         var name = nameCaller.names[idx];
         var firstLetter = name.charAt(0);
         if ((firstLetter == "J") || (firstLetter == "j")) {
-          helloSpeaker.speak(name);
-        } else {
           byeSpeaker.speak(name);
+        } else {
+          helloSpeaker.speak(name);
         }
       }
     }
@@ -37,9 +37,9 @@
         var name = nameCaller.names[idx];
         var firstLetter = name.charAt(0);
         if ((firstLetter == "J") || (firstLetter == "j")) {
-          message = helloSpeaker.speakAndReturn(name);
-        } else {
           message = byeSpeaker.speakAndReturn(name);
+        } else {
+          message = helloSpeaker.speakAndReturn(name);
         }
         a.document.write(message);
         a.document.write("<br>");
