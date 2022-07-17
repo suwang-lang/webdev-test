@@ -67,7 +67,7 @@
 (function (window) {
 
   var nameCaller = {};
-  nameCaller.names = ["Yaakov", "john", "Jen", "jason", "Paul", "frank", "Larry", "paula", "Laura", "Jim"];
+  nameCaller.names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
   // nameCaller.call = function (name, sayHello, sayBye) {
   //   if ((name.charAt(0) == ("j" || "J")) {
   //     sayHello(name);
