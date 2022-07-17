@@ -26,27 +26,7 @@
         }
       }
     }
-
     printNames();
-
-    // HTML buttoned solution to Assignment 4.
-    var printNamesInPage = function () {
-      var a = window.open('', '', 'height=500, width=500');
-      a.document.write("<br>");
-      for (var idx in nameCaller.names) {
-        var name = nameCaller.names[idx];
-        var firstLetter = name.charAt(0);
-        if ((firstLetter == "J") || (firstLetter == "j")) {
-          message = byeSpeaker.speakAndReturn(name);
-        } else {
-          message = helloSpeaker.speakAndReturn(name);
-        }
-        a.document.write(message);
-        a.document.write("<br>");
-      }
-      a.document.close();
-    }
-
 
   </script>
 
@@ -59,8 +39,37 @@
     <span>Method 1 to see answer: "..." -> "More Tools" -> "Developer Tools".</span>
     <br><br>
     <span>Method 2 to see answer: click the button below.</span><br>
-    <input type="button" value="click to get greetings!" onclick="printNamesInPage()">
+    <input type="button" value="click to get greetings!" onclick="printNamesInPage();">
+    <div id="out-message">
+      
+    </div>
   </div>
+
+
+  <script type="text/javascript">
+    // HTML buttoned solution to Assignment 4.
+    var printNamesInPage = function () {
+      // var a = window.open('', '', 'height=500, width=500');
+      // a.document.write("<br>");
+      var printout = "<br>" 
+      for (var idx in nameCaller.names) {
+        var name = nameCaller.names[idx];
+        var firstLetter = name.charAt(0);
+        if ((firstLetter == "J") || (firstLetter == "j")) {
+          message = byeSpeaker.speakAndReturn(name);
+        } else {
+          message = helloSpeaker.speakAndReturn(name);
+        }
+        printout += message + "<br>"
+        // a.document.write(message);
+        // a.document.write("<br>");
+      }
+      // a.document.close();
+      document
+        .getElementById("out-message")
+        .innerHTML = printout;
+    }
+  </script>
 
 
 </body>
